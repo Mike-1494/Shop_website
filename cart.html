@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Shopthethao</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+      <title>Shopthethao</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/cartstyle.css">      
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+   <header class="header">
+  <div class="container header__top">
+    <div class="header__logo">
+      <h1 class="header__title">
+        Shopthethao
+        <span class="header__subtitle">Best choice for you!</span>
+      </h1>
+    </div>
+    <div class="header__cart">
+      <ul>
+        <li class="header__submenu" id="submenu">
+          <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
+</svg> Giỏ hàng</button>
+          <div id="shopping-cart" class="shopping-cart-container">
+            <table id="cart-content">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p class="total-container" id="total-price"></p>
+            <a href="#" id="checkout-btn" class="cart-btn">Thanh toán</a>
+            <a href="#" id="clear-cart" class="cart-btn">Xóa tất cả mặt hàng</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header__main">
+    <p class="display-title text-light">
+      Chào mừng bạn đến với gian hàng của chúng tôi!
+    </p>
+  </div>
+  <div class="arrow"><svg width="24" height="24" viewBox="0 0 24 24">
+  <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"></path>
+</svg></div>
+</header>
+<main class="container page-content">
+  <h2 class="page-title">Các mặt hàng</h2>
+  <div class="grid" id="grid">
+    <div class="card">
+      <img src="./images/p1.png" width="200" height="200" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Áo đấu Mancity</h4>
+        <p class="card__text">Áo đấu K.Bruyne</p>
+        <p class="card__price">20000VND</p>
+        <button class="card__btn add-to-cart" data-id="6">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./images/p2.png" width="200" height="200" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Áo đấu Mancity</h4>
+        <p class="card__text">Áo đấu E.Haaland</p>
+        <p class="card__price">20000VND</p>
+        <button class="card__btn add-to-cart" data-id="7">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./images/p3.png" width="200" height="200" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Áo đấu Argentina</h4>
+        <p class="card__text">Áo đấu Messi </p>
+        <p class="card__price">20000VND</p>
+        <button class="card__btn add-to-cart" data-id="8">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./images/p4.png" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Áo đấu Bồ Đào Nha</h4>
+        <p class="card__text">Áo đấu Ronaldo</p>
+        <p class="card__price">20000VND</p>
+        <button class="card__btn add-to-cart" data-id="9">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./images/p5.png" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Áo đấu ĐT VN</h4>
+        <p class="card__text">Màu trắng</p>
+        <p class="card__price">20000VND</p>
+        <button class="card__btn add-to-cart" data-id="10">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./images/p6.png" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Áo đấu ĐT VN</h4>
+        <p class="card__text">Màu đỏ</p>
+        <p class="card__price">20000VND</p>
+        <button class="card__btn add-to-cart" data-id="11">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./images/p7.png" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Áo đấu đội tuyển Italia</h4>
+        <p class="card__text">EURO 2024</p>
+        <p class="card__price">20000VND</p>
+        <button class="card__btn add-to-cart" data-id="12">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+        <img src="./images/p8.png" alt="" class="card__image">
+        <div class="card__info">
+          <h4 class="card__title">Áo đấu đội tuyển Đức</h4>
+          <p class="card__text">EURO 2024</p>
+          <p class="card__price">20000VND</p>
+          <button class="card__btn add-to-cart" data-id="12">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/p9.png" alt="" class="card__image">
+        <div class="card__info">
+          <h4 class="card__title">Áo đấu đội tuyển Anh</h4>
+          <p class="card__text">EURO 2024</p>
+          <p class="card__price">20000VND</p>
+          <button class="card__btn add-to-cart" data-id="12">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/p10.png" alt="" class="card__image">
+        <div class="card__info">
+          <h4 class="card__title">Áo đấu đội tuyển Pháp</h4>
+          <p class="card__text">EURO 2024</p>
+          <p class="card__price">20000VND</p>
+          <button class="card__btn add-to-cart" data-id="12">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/p11.png" alt="" class="card__image">
+        <div class="card__info">
+          <h4 class="card__title">Áo đấu đội tuyển TBN</h4>
+          <p class="card__text">EURO 2024</p>
+          <p class="card__price">20000VND</p>
+          <button class="card__btn add-to-cart" data-id="12">Add to Cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/p12.png" alt="" class="card__image">
+        <div class="card__info">
+          <h4 class="card__title">Áo đấu đội tuyển Brazil</h4>
+          <p class="card__text">Áo đấu Neymar</p>
+          <p class="card__price">20000VND</p>
+          <button class="card__btn add-to-cart" data-id="12">Add to Cart</button>
+        </div>
+      </div>
+    
+    <!--.card-->
+  </div>
+</main>
+     <!-- END EDMO HTML (Happy Coding!)-->
+ </main>
+ <!-- footer section -->
+ <footer class="footer_section">
+  <div class="container">
+     <div class="row">
+        <div class="col-md-4 footer-col">
+           <div class="footer_contact">
+              <h4>
+                 Thông tin
+              </h4>
+              <h4>
+                 Địa chỉ:144 Xuân Thủy,Dịch Vọng Hậu,Cầu Giấy ,Hà Nội
+              </h4> 
+              <h4>
+                 SĐT : +84 987 654 321
+              </h4> 
+              <h4> 
+                 Email: shopthethao789@gmail.com
+               </h4>  
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 footer-col">
+           <div class="footer_detail">
+              <a href="index.html" class="footer-logo">
+              Shopthethao lựa chọn hàng đầu cho bạn!
+              </a>
+              <p>
+              Uy tín,chất lượng hàng đầu VN ! Mỗi nụ cười của khách hàng chính là động lực phát triển của chúng tôi .
+              </p>
+              <div class="footer_social">
+                 <a href="">
+                 <i class="fa fa-facebook" aria-hidden="true"></i>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-twitter" aria-hidden="true"></i>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-linkedin" aria-hidden="true"></i>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-pinterest" aria-hidden="true"></i>
+                 </a>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 footer-col">
+           <div class="map_container">
+              <div class="map">
+                 <div id="googleMap"></div>
+              </div>
+           </div>
+        </div>
+
+     </div>
+     
+</footer>
+<!-- footer section -->
+  <script  src="./js/cartscript.js"></script>
+  </body>
+</html>
+       
